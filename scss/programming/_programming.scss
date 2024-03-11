@@ -1,0 +1,75 @@
+.about span {
+  display: block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin: auto;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #ffffff;
+  opacity: 0.8;
+  background:linear-gradient( #1b0b2f,#100b53);  //#291248,#1b1483
+  border: 2px solid #ffffff;
+  transition: all 0.5s ease;
+}
+
+.about-item:hover span {
+  opacity: 1;
+  border: 2px solid #ffffff;
+  font-size: 42px;
+  background:linear-gradient( #3e1c6b,#251ca8);
+  -webkit-transform: scale(1.1, 1.1) rotate(360deg);
+  -moz-transform: scale(1.1, 1.1) rotate(360deg);
+  -o-transform: scale(1.1, 1.1) rotate(360deg);
+  transform: scale(1.1, 1.1) rotate(360deg);
+}
+
+.about--item:hover h2 {
+  opacity: 1;
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.programming-button {
+  background-color: #008736;
+  color: white !important;
+  padding: 15px 70px;
+  opacity: 0.7;
+  font-family: Averta-Regular, sans-serif;
+}
+
+.about-button:hover {
+  background:linear-gradient( #7a2ae3,#9041f8);
+  opacity: 1;
+  color: white !important;
+  transition: linear 2s;
+}
+
+.about-button-new {
+  background:linear-gradient( #1b0b2f,#100b53);
+  color: white !important;
+  opacity: 0.9;
+  font-family: Averta-Regular, sans-serif;
+  height: 50px;
+  width: 200px;
+  display: inline-block;
+  padding-top: 3%;
+
+  &:hover {
+    background:linear-gradient( #3e1c6b,#251ca8);
+    opacity: 1;
+    color: white !important;
+    transition: linear 2s;
+  }
+}
+
+@media (max-width: 900px) {
+  .about {
+    span {
+      margin-top: 40px;
+    }
+  }
+}
+

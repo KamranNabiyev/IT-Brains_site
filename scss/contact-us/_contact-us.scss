@@ -1,0 +1,35 @@
+.corporate-contact {
+  background-color: #f7f7f7;
+
+  input,
+  select {
+    font-family: "Averta-Regular", sans-serif;
+    font-size: 18px;
+    margin-top: 14px;
+  }
+
+  select {
+    border-color: transparent;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: Averta-Regular, sans-serif;
+    margin-top: 14px;
+    color: #87898a;
+    width: 100%;
+  }
+
+  .contact-button {
+    background-color: #c22a2a;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin-top: 14px;
+    font-family: Averta-Bold, sans-serif;
+  }
+
+  .contact-button:hover {
+    background-color: #ffb901;
+    color: white;
+  }
+}

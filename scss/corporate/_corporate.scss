@@ -1,0 +1,226 @@
+.corporate-head {
+  background-image: url("/src/img/teachers/corporate.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+
+  h1 {
+    color: white;
+  }
+}
+
+.card-corporate {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  transition: ease all 2.3s;
+  perspective: 1200px;
+}
+
+.card-corporate:hover .cover {
+  transform: rotateX(0deg) rotateY(-180deg);
+}
+
+.card-corporate:hover .cover:before {
+  transform: translateZ(30px);
+}
+
+.card-corporate:hover .cover:after {
+  background-color: black;
+}
+
+.card-corporate:hover .cover h1 {
+  transform: translateZ(100px);
+}
+
+.card-corporate:hover .cover .price {
+  transform: translateZ(60px);
+}
+
+.card-corporate:hover .cover a {
+  transform: translateZ(-60px) rotatey(-180deg);
+}
+
+.card-corporate .cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card-corporate .cover:before {
+  content: "";
+  position: absolute;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+  transition: ease all 2.3s;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+
+.card-corporate .cover:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+  transition: ease all 1.3s;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.read-more {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .read-more {
+    display: block;
+    font-weight: 200;
+    position: absolute;
+    bottom: 28px;
+    left: 30px;
+    color: white;
+    transform-style: preserve-3d;
+    transition: ease all 2.3s;
+    z-index: 4;
+    font-size: 24px;
+    transform: translateZ(0px);
+  }
+  .card-corporate {
+    margin-top: 20px;
+  }
+
+  .corporate-head {
+    height: 350px;
+  }
+
+  .img-dsp {
+    display: none;
+  }
+}
+
+.card-corporate .cover.item-a {
+  background-image: url("/src/img/teachers/corporate_card1.jpg");
+}
+
+.card-corporate .cover.item-b {
+  background-image: url("/src/img/teachers/corporate_card2.jpg");
+}
+
+.card-corporate .cover.item-c {
+  background-image: url("/src/img/teachers/corporate_card3.jpeg");
+}
+
+.card-corporate .cover.item-d {
+  background-image: url("/src/img/teachers/corporate_card4.jpg");
+}
+
+.card-corporate .cover h1 {
+  /* font-weight: 600; */
+  position: absolute;
+  bottom: 55px;
+  left: 30px;
+  color: white;
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  z-index: 3;
+  font-size: 24px;
+  transform: translateZ(0px);
+}
+
+.card-corporate .cover a {
+  background-color: red;
+  position: absolute;
+  bottom: 24px;
+  left: 30px;
+  color: white !important;
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  z-index: 3;
+  font-size: 22px;
+  transform: translateZ(0px);
+}
+
+.card-corporate .card-corporate-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background: linear-gradient(#576e84,#33485c);
+  transform-style: preserve-3d;
+  transition: ease all 2.3s;
+  transform: translateZ(-1px);
+  display: flex;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: ease transform 2.3s, ease background 0.5s;
+  transform: translateZ(-1px) rotatey(-180deg);
+  justify-content: center;
+}
+
+.card-corporate .card-corporate-back p {
+  padding: 14px 28px;
+ 
+}
+
+.corporate-contacts {
+  background-color: #f7f7f7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  input {
+    border-color: transparent;
+    background-color: #ffffff;
+    padding: 7px 20px;
+    font-size: 18px;
+    font-family: Averta-Regular, sans-serif;
+    width: 100%;
+    margin-top: 14px;
+  }
+
+  &::placeholder {
+    color: #87898a !important;
+  }
+
+  select {
+    border-color: transparent;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: Averta-Regular, sans-serif;
+    margin-top: 14px;
+    color: #87898a;
+    width: 100%;
+  }
+
+  .contact-button {
+    background-color: red;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin-top: 14px;
+    font-family: Averta-Bold, sans-serif;
+    &:hover {
+      background-color: #ffb901;
+      color: white;
+    }
+  }
+}
+
+.corporate-contact {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

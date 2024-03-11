@@ -1,0 +1,132 @@
+@import "./components/preloader";
+@import "./header/header";
+@import "./home/home";
+@import "./contact-us/contact-us";
+@import "./itbrains-lab/itbrains-lab";
+@import "./teachers/teachers";
+@import "./news//news";
+@import "./programming/programming";
+@import "./corporate/corporate";
+@import "./frontend/frontend";
+@import "./vacansy/vacansy";
+@import "./infotech/infotech";
+@import "./helpdesk/helpdesk";
+@import "./network/network";
+@import "./cybersecurity/cybersecurity";
+@import "./design/design";
+@import "./graphic/graphic";
+@import "./motion/motion";
+@import "./ux/ux";
+@import "./data/data";
+@import "./digital/digital";
+@import "./office/office";
+@import "./backend/backend";
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 20px 0 40px 0;
+}
+
+@mixin bg-image {
+  background-repeat: no-repeat;
+  padding: 30px 0px 30px 30px;
+  background-position: left;
+  background-size: contain;
+}
+
+@mixin bg-image-responsive {
+  background-repeat: no-repeat;
+  padding: 20px 0px 20px 23px;
+  background-position: left;
+  background-size: contain;
+}
+
+.bg-image-gold {
+  background-image: url("../../src/img/lines/Sari\ xett.png");
+  @include bg-image();
+}
+
+.bg-image-green {
+  background-image: url("../src/img/lines/Yashil_xett.png");
+  @include bg-image();
+}
+
+.bg-image-red {
+  background-image: url("../src/img/lines/Qirmizi_xett.png");
+  @include bg-image();
+}
+
+.bg-image-violet {
+  background-image: url("../src/img/lines/Benovsheyi_xett.png");
+  @include bg-image();
+}
+
+.bg-image-blue {
+  background-image: url("../src/img/lines/programming_line.png");
+  @include bg-image();
+}
+
+.bg-image-infotech {
+  background-image: url("../src/img/lines/infotech.png");
+  @include bg-image();
+}
+
+.bg-image-design {
+  background-image: url("../src/img/lines/design.png");
+  @include bg-image();
+}
+
+
+
+
+.main-title {
+  font-family: Averta-Bold, sans-serif;
+  font-size: 40px;
+  color: #333a4a;
+}
+
+.main-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  section {
+    padding-bottom: 20px;
+  }
+  .main-title {
+    font-size: 26px;
+  }
+  .bg-image-gold {
+    background-image: url("../src/img/lines/Sari\ xett.png");
+    @include bg-image-responsive();
+  }
+  .bg-image-green {
+    background-image: url("../src/img/lines/Yashil_xett.png");
+    @include bg-image-responsive();
+  }
+  .bg-image-red {
+    background-image: url("../src/img/lines/Qirmizi_xett.png");
+    @include bg-image-responsive();
+  }
+  .bg-image-violet {
+    background-image: url("../src/img/lines/Benovsheyi_xett.png");
+    @include bg-image-responsive();
+  }
+
+  .bg-image-gradient {
+    background-image: url("../src/img/lines/Qradient_1_xett.png");
+    @include bg-image-responsive();
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
